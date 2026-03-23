@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over Terrain Vehicle Data Mission - Harry Cohen-Dumani</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/nav.css">
+  <link rel="stylesheet" href="../seprate-exp.css">
+  <link rel="stylesheet" href="../scroll_progress/scroll_progress.css">
+
+  <link rel="icon" type="image/x-icon" href="../header/HCD_logo.png">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    .top-page-title,
+    .skill {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    p, li, .figure-text {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h2{
+      font-size: 2.5em;
+      margin-top: 28px;
+      margin-bottom: 20px;
+    }
+    h3{
+      margin-top: 16px;
+    }
+    ul {
+      padding-left: 25px;
+    }
+    li{
+      margin-bottom: 10px;
+    }
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .steps-image{
+      max-width: 100%;
+      height: auto;
+      box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    .project-description {
+      max-width: 1200px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 100px;
+      padding-right: 100px;
+      text-align: left;
+    }
+    .project-description p,
+    .project-description ul {
+      margin-left: 50px;
+    }
+    .project-description h3 {
+      margin-left: 30px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .skill {
+      background-color: #f3f3f3;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #333;
+    }
+    .skill:hover {
+      background-color: #ddd;
+    }
+    iframe{
+      box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 768px) {
+      .top-page-title{
+        font-size: 2em;
+      }
+      h2{
+        font-size: 2em;
+      }
+      iframe {
+        width: 115%;
+        height: auto;
+        aspect-ratio: 16/9;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Progress Bar for Scrolling -->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="hamburger-icon">
+      <a href="../index.html#home">
+        <img src="../header/HCD_logo.png" alt="Harry Cohen-Dumani Logo" class="nav-logo" loading="lazy">
+      </a>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+      </div>
+    </div>
+    <div class="mobile-menu hidden">
+      <a href="../index.html#home">Home</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <ul class="desktop-menu">
+      <a href="../index.html#home"><li><img src="../header/HCD_logo.png" alt="Harry Cohen-Dumani Logo" class="nav-logo" loading="lazy"></li></a>
+      <a href="../index.html#home"><li>Home</li></a>
+      <a href="../index.html#experience"><li>Experience</li></a>
+      <a href="../index.html#projects"><li>Projects</li></a>
+      <a href="../index.html#contact"><li>Contact</li></a>
+    </ul>
+  </nav>
+
+  <!-- Project Section -->
+  <section class="projects-section">
+    <div class="project-container">
+      <header class="section-header" style="padding-top: 50px;">
+        <h1 class="top-page-title">Over Terrain Vehicle Data Mission</h1>
+      </header>
+
+      <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin: 0 0 30px 0; flex-wrap: wrap;">
+        <img src="images/7f2b41304f4d7f85005dd62cf829ce0f.png" alt="OTV Design" style="width: 300px; height: 300px; object-fit: cover; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+        <img src="images/04a48c929dc754d3ad1b3d46e2290973.png" alt="OTV Mission" style="width: 300px; height: 300px; object-fit: cover; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+        <img src="images/25f29f74d79ae48cce4ba417a3cc3ea9.png" alt="OTV Navigation" style="width: 300px; height: 300px; object-fit: cover; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+      </div>
+
+      <div class="project-description">
+        <h2>Mission Objective</h2>
+        <p>
+          In ENES100: Introduction to Engineering Design, my team, the Data Dinos, designed an over-terrain robot to navigate a complex course and complete a data mission. The mission objectives were:
+        </p>
+        <ul>
+          <li>Autonomously navigate through the obstacle course and approach the pylon</li>
+          <li>Measure the duty cycle of the transmitted square wave from the nodes in the pylon</li>
+          <li>Detect whether the puck inside the pylon is magnetic or not</li>
+          <li>Successfully navigate to the goal zone</li>
+        </ul>
+        <p>
+          We were constrained to a budget of $300 and 5 minutes to complete the mission. This required extensive research, prototyping, testing, and collaboration to complete the goal.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin: 30px 0; flex-wrap: wrap;">
+          <img src="images/pylon.png" alt="Pylon" style="height: 300px; width: auto; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+          <img src="images/field.png" alt="Field" style="height: 300px; width: auto; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+        </div>
+
+        <h2>Process and Methodology</h2>
+        <h3>Vertical Deployment</h3>
+        <p>
+          A stepper motor drives a lead screw, lowering a 3D-printed arm assembly into a pylon.
+        </p>
+
+        <h3>Sensor Assembly</h3>
+        <p>
+          At the top, a potentiometer-mounted arm holds a string with a small magnet on the end. The potentiometer tracks the arm's angle and the magnet is used to attract the puck if it is magnetic.
+        </p>
+
+        <h3>Data Collection</h3>
+        <p>
+          Once inserted, the OTV reverses until the arm's contact wires touch the pylon's internal nodes, allowing the system to read the duty cycle of a transmitted square wave.
+        </p>
+
+        <h3>Magnetic Puck Identification</h3>
+        <p>
+          During retraction, if the puck is magnetic, the magnet lifts it, altering the potentiometer's angle due to the added weight. The microcontroller detects this change and flags it as a positive magnetic reading. If no angle change is recorded, the puck is classified as non-magnetic.
+        </p>
+
+        <div style="display: flex; justify-content: center; margin: 40px 0;">
+          <video width="800" controls style="max-width: 100%; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+            <source src="https://umcp.my.canva.site/noahengineer/_assets/video/e252dcb78644d6499bd2335a9d86b8e4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div style="display: flex; gap: 30px; align-items: flex-start; margin: 40px 0;">
+          <div style="flex: 0 0 60%;">
+            <h2>Autonomous Navigation</h2>
+            <ul>
+              <li><strong>Overhead Vision System:</strong> An ArUco marker placed on top of the OTV was tracked by an overhead camera, which compared it to reference markers at the arena corners. The system then calculated the OTV's position and heading and sent that information over WiFi for autonomous navigation.</li>
+              <li><strong>Ultrasonic Sensor:</strong> Used to detect objects in front of the OTV, which was then implemented into the code to successfully avoid the obstacles.</li>
+              <li><strong>Mecanum Wheels:</strong> Used to easily rotate in place and move left and right without turning.</li>
+              <li><strong>Control Algorithm:</strong> Wrote code in Arduino with a logical control algorithm to successfully navigate and complete the mission.</li>
+            </ul>
+
+            <h2>Design & Hands-on Prototyping</h2>
+            <ul>
+              <li>Brainstormed and designed multiple prototypes, creating 25+ detailed parts and 3D models in Fusion 360, and then 3D printed the components.</li>
+              <li>Researched and calculated proper voltage and amperage for the battery to power the Arduino and 4 motors. Successfully designed the circuit configuration and soldered all of the wires.</li>
+              <li>Used a laser cutter to create the wood chassis.</li>
+            </ul>
+
+            <h2>Collaboration and Implementation</h2>
+            <ul>
+              <li>Worked closely with engineers of all disciplines.</li>
+              <li>Served as Lead Programmer, directing all software development and control system implementation.</li>
+              <li>Created milestones with checkpoints to ensure the project was staying on task by using a GANTT Chart.</li>
+            </ul>
+
+            <h2>Results</h2>
+            <ul>
+              <li>Completed the mission under budget, spending less than $200 of the $300 allowance, and achieved a perfect score to win the class competition.</li>
+              <li>Nominated for the "ENES100 Project Most Innovative Design Award" out of all six classes for our creative approach to solving the mission.</li>
+              <li>Although successful, the OTV moved slower than expected because the battery couldn't supply enough current to all four motors and the stepper motor simultaneously.</li>
+            </ul>
+          </div>
+          <div style="flex: 0 0 35%; align-self: center;">
+            <video width="100%" controls style="border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+              <source src="https://umcp.my.canva.site/noahengineer/_assets/video/645f550fc65490a4d59c8ef711cfb2b7.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Skills Links -->
+        <div class="skills">
+          <a href="../index.html#contact" class="skill">
+            <i class="fas fa-envelope"></i>
+            <span>Contact Me</span>
+          </a>
+          <a href="../index.html#projects" class="skill">
+            <i class="fas fa-home"></i>
+            <span>Return Home</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <a href="#home">
+        <img src="../header/HCD_logo.png" alt="Harry Cohen-Dumani Logo" class="footer-logo" loading="lazy">
+      </a>
+      <div class="footer-links">
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+      <p>&copy; 2025 Harry Cohen-Dumani</p>
+      <p>This website was entirely built from scratch using JavaScript, HTML, and CSS by Harry Cohen-Dumani</p>
+      <button id="useless-button" class="useless-button">Useless Button</button>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="../scroll_progress/scroll_progress.js"></script>
+</body>
+</html>

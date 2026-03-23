@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Window Shade System - Harry Cohen-Dumani</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/nav.css">
+  <link rel="stylesheet" href="../seprate-exp.css">
+  <link rel="stylesheet" href="../scroll_progress/scroll_progress.css">
+
+  <link rel="icon" type="image/x-icon" href="../header/HCD_logo.png">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    .top-page-title,
+    .skill {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    p, li, .figure-text {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h2{
+      font-size: 2.5em;
+      margin-top: 28px;
+      margin-bottom: 20px;
+    }
+    h3{
+      margin-top: 16px;
+    }
+    .project-description img {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .project-description div img {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      margin-bottom: 20px;
+      font-size: 0.95em;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #222;
+      color: #F5F5F7;
+    }
+    tr:nth-child(even) {
+      background-color: #1a1a1a;
+    }
+    code {
+      background-color: #222;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.9em;
+    }
+    ul {
+      padding-left: 25px;
+    }
+    li{
+      margin-bottom: 10px;
+    }
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .steps-image{
+      max-width: 100%;
+      height: auto;
+      box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    .rotated-image {
+      transform: rotate(-90deg);
+    }
+    .project-description {
+      max-width: 1200px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 100px;
+      padding-right: 100px;
+      text-align: left;
+    }
+    .project-description p,
+    .project-description ul {
+      margin-left: 50px;
+    }
+    .project-description h3 {
+      margin-left: 30px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .skill {
+      background-color: #f3f3f3;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #333;
+    }
+    .skill:hover {
+      background-color: #ddd;
+    }
+    iframe{
+      box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 768px) {
+      .top-page-title{
+        font-size: 2em;
+      }
+      h2{
+        font-size: 2em;
+      }
+      iframe {
+        width: 115%;
+        height: auto;
+        aspect-ratio: 16/9;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Progress Bar for Scrolling -->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="hamburger-icon">
+      <a href="../index.html#home">
+        <img src="../header/HCD_logo.png" alt="Harry Cohen-Dumani Logo" class="nav-logo" loading="lazy">
+      </a>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+      </div>
+    </div>
+    <div class="mobile-menu hidden">
+      <a href="../index.html#home">Home</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <ul class="desktop-menu">
+      <a href="../index.html#home"><li><img src="../header/HCD_logo.png" alt="Harry Cohen-Dumani Logo" class="nav-logo" loading="lazy"></li></a>
+      <a href="../index.html#home"><li>Home</li></a>
+      <a href="../index.html#experience"><li>Experience</li></a>
+      <a href="../index.html#projects"><li>Projects</li></a>
+      <a href="../index.html#contact"><li>Contact</li></a>
+    </ul>
+  </nav>
+
+  <!-- Project Section -->
+  <section class="projects-section">
+    <div class="project-container">
+      <header class="section-header" style="padding-top: 50px;">
+        <h1 class="top-page-title">Smart Window Shade System</h1>
+      </header>
+
+      <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin: 0 0 30px 0; flex-wrap: wrap;">
+        <img src="IMG_6178.gif" alt="Smart Window Shade System demo" style="width: 300px; height: 300px; object-fit: cover; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+        <img src="blinds_cad.png" alt="Smart Window Shade System CAD" style="width: 300px; height: 300px; object-fit: cover; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+      </div>
+
+      <div class="project-description">
+
+        <h2>Project Overview</h2>
+        <p>
+          A motorized window shade controller built on a Raspberry Pi 4 that drives a NEMA 17 stepper motor via an A4988 driver to raise and lower a curtain hung from a wooden dowel rod. Features soft start/stop ramping, persistent step tracking, and an interactive speed control interface.
+        </p>
+
+        <h2>How It Works</h2>
+        <p>
+          The NEMA 17 stepper motor is mounted to the curtain rod via a 3D printed bracket. A 1-inch wooden dowel rod (~4 ft) is coupled to the motor shaft and spans the width of the window, holding the curtain. The opposite end of the dowel is supported by a 3D printed bearing bracket attached to the curtain rod.
+        </p>
+        <p>
+          When <code>blinds.py up</code> or <code>blinds.py down</code> is run, the motor turns the dowel to roll the curtain up or down. The system tracks the absolute step position in <code>~/.stepper_motor_steps</code> so it always knows where the shade is, even after a reboot. Soft ramp-up and ramp-down logic prevents jerking at start and stop.
+        </p>
+
+        <h2>Hardware</h2>
+
+        <h3>Bill of Materials</h3>
+        <table>
+          <tr><th>#</th><th>Item</th><th>Description</th><th>Qty</th></tr>
+          <tr><td>1</td><td>Curtain Rod</td><td>COTS standard curtain rod</td><td>1</td></tr>
+          <tr><td>2</td><td>Curtain</td><td>COTS curtain</td><td>1</td></tr>
+          <tr><td>3</td><td>NEMA 17 Stepper Motor</td><td>Motor to drive the dowel rod</td><td>1</td></tr>
+          <tr><td>4</td><td>A4988 Stepper Driver</td><td>Motor driver for the NEMA 17</td><td>1</td></tr>
+          <tr><td>5</td><td>Raspberry Pi 4</td><td>Main compute board running all software</td><td>1</td></tr>
+          <tr><td>6</td><td>3D Printed Case</td><td>Enclosure for the Raspberry Pi and A4988 driver</td><td>1</td></tr>
+          <tr><td>7</td><td>Wooden Dowel Rod</td><td>1 in diameter, ~4 ft long</td><td>1</td></tr>
+          <tr><td>8</td><td>3D Printed Motor Bracket</td><td>Mounts NEMA 17 to the curtain rod on the motor side</td><td>1</td></tr>
+          <tr><td>9</td><td>3D Printed Bearing Bracket</td><td>Supports non-motor end of dowel, mounted to curtain rod</td><td>1</td></tr>
+          <tr><td>10</td><td>Flex/Rigid Coupling</td><td>Connects the 3D printed motor adapter to the NEMA 17 shaft</td><td>1</td></tr>
+        </table>
+
+        <h3>Wiring</h3>
+        <p>The A4988 driver connects to the Raspberry Pi GPIO (BCM numbering). Motor runs in <strong>1/16 microstep mode</strong> (MS1, MS2, MS3 all HIGH) for smooth and quiet operation — 1600 steps per revolution.</p>
+        <table>
+          <tr><th>A4988 Pin</th><th>RPi GPIO (BCM)</th><th>Purpose</th></tr>
+          <tr><td>DIR</td><td>21</td><td>Direction control</td></tr>
+          <tr><td>STEP</td><td>20</td><td>Step pulse</td></tr>
+          <tr><td>MS1</td><td>16</td><td>Microstep select 1</td></tr>
+          <tr><td>MS2</td><td>12</td><td>Microstep select 2</td></tr>
+          <tr><td>MS3</td><td>1</td><td>Microstep select 3</td></tr>
+          <tr><td>EN</td><td>7</td><td>Enable (active low)</td></tr>
+        </table>
+
+        <h2>CAD Models</h2>
+        <p>Four 3D printed parts were designed for this project: a motor bracket, bearing bracket, motor adapter, and an enclosure for the Pi 4 and A4988 driver.</p>
+        <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap; margin-top: 20px; margin-bottom: 20px;">
+          <img src="nema 17 holder.png" alt="NEMA 17 Mount" style="height: 300px; width: auto; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+          <img src="dowel end bracket.png" alt="End Bracket" style="height: 300px; width: auto; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+          <img src="dowel holders.png" alt="Dowel Mount" style="height: 300px; width: auto; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+        </div>
+
+        <h2>Software</h2>
+        <p>All scripts are written in Python and interface directly with the Raspberry Pi GPIO pins.</p>
+        <table>
+          <tr><th>Script</th><th>Description</th></tr>
+          <tr><td><code>blinds.py</code></td><td>Primary script. Moves shade up or down with soft ramp-up/ramp-down. Enforces step limits (0–23500).</td></tr>
+          <tr><td><code>test.py</code></td><td>Interactive test script with live keyboard speed control (arrow keys) and direction switching.</td></tr>
+          <tr><td><code>get_steps.py</code></td><td>Prints the current saved step position.</td></tr>
+          <tr><td><code>set_steps.py</code></td><td>Resets the step counter to 0. Run after manually homing the shade.</td></tr>
+          <tr><td><code>disable.py</code></td><td>Disables the motor by setting the EN pin HIGH, releasing holding torque.</td></tr>
+        </table>
+
+        <!-- Skills Links -->
+        <div class="skills">
+          <a href="https://github.com/hcodu" target="_blank" rel="noopener noreferrer" class="skill">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="../index.html#contact" class="skill">
+            <i class="fas fa-envelope"></i>
+            <span>Contact Me</span>
+          </a>
+          <a href="../index.html#projects" class="skill">
+            <i class="fas fa-home"></i>
+            <span>Return Home</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <a href="../index.html#home">
+        <img src="../header/HCD_logo.png" alt="Harry Cohen-Dumani Logo" class="footer-logo" loading="lazy">
+      </a>
+      <div class="footer-links">
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+      <p>&copy; 2025 Harry Cohen-Dumani</p>
+      <p>This website was entirely built from scratch using JavaScript, HTML, and CSS by Harry Cohen-Dumani</p>
+      <button id="useless-button" class="useless-button">Useless Button</button>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="../scroll_progress/scroll_progress.js"></script>
+</body>
+</html>

@@ -35,6 +35,11 @@
 
     h2{
       font-size: 2.5em;
+      margin-top: 28px;
+      margin-bottom: 20px;
+    }
+    h3{
+      margin-top: 16px;
     }
     ul {
       padding-left: 25px;
@@ -56,9 +61,20 @@
       margin-bottom: 15px;
     }
     .project-description {
-      max-width: 800px;
+      max-width: 1200px;
       margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 100px;
+      padding-right: 100px;
       text-align: left;
+    }
+    .project-description p,
+    .project-description ul {
+      margin-left: 50px;
+    }
+    .project-description h3 {
+      margin-left: 30px;
     }
     .skills {
       display: flex;
@@ -76,12 +92,21 @@
     .skill:hover {
       background-color: #ddd;
     }
+    iframe{
+      box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+      margin-bottom: 15px;
+    }
     @media (max-width: 768px) {
       .top-page-title{
         font-size: 2em;
       }
       h2{
         font-size: 2em;
+      }
+      iframe {
+        width: 115%;
+        height: auto;
+        aspect-ratio: 16/9;
       }
     }
   </style>
@@ -122,19 +147,36 @@
   <!-- Project Section -->
   <section class="projects-section">
     <div class="project-container">
-      <header class="section-header">
+      <header class="section-header" style="padding-top: 50px;">
         <h1 class="top-page-title">FRC Robotics</h1>
       </header>
 
+      <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin: 0 0 30px 0; flex-wrap: wrap;">
+        <img src="img1.png" alt="FRC Robotics" style="width: 300px; height: 300px; object-fit: cover; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+        <img src="img2.png" alt="FRC Robotics" style="width: 300px; height: 300px; object-fit: cover; background-color: white; padding: 10px; border-radius: 8px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;">
+      </div>
+
       <div class="project-description">
-        <!-- Content will be added here -->
+        <!-- Content to be added -->
+
+        <!-- Skills Links -->
+        <div class="skills">
+          <a href="../index.html#contact" class="skill">
+            <i class="fas fa-envelope"></i>
+            <span>Contact Me</span>
+          </a>
+          <a href="../index.html#projects" class="skill">
+            <i class="fas fa-home"></i>
+            <span>Return Home</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="footer-content">
-      <a href="#home">
+      <a href="../index.html#home">
         <img src="../header/HCD_logo.png" alt="Harry Cohen-Dumani Logo" class="footer-logo" loading="lazy">
       </a>
       <div class="footer-links">

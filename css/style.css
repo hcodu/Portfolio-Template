@@ -33,13 +33,14 @@ body {
 
 .projects{
   background-color: #101010;
+  padding-bottom: 15px;
 }
 
 #top-page-projects{
-  z-index:5; /*this is so its above the carousel*/
-  margin-bottom: -30px;
   font-size: 65px;
   color: #F5F5F7;
+  text-align: center;
+  padding: 20px 0 5px 0;
 }
 
 /* Footer Styling */

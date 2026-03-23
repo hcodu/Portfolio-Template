@@ -6,10 +6,10 @@
 }
 
 #top-page-exp{
-  z-index:5; /*this is so its above the carousel*/
-  margin-bottom: -30px; /*lower it to get to the carousel*/
   font-size: 65px;
   color:#F5F5F7;
+  text-align: center;
+  padding: 20px 0 5px 0;
 }
 
 /* Styling for the Experience section */
@@ -94,7 +94,7 @@
   flex: 0 0 auto; /* first two numbers are for flex-grow and flex-shrink, the last one is for flex-basis which helps to set the width of the card */
   width: 250px;
   height: 500px;
-  margin-right: 20px;
+  margin-right: 5px;
   padding: 20px; /* Add padding */
   padding-bottom:500;
   background-color: #333335; /*CHANGE LATER Add background color */
@@ -113,6 +113,7 @@
   overflow: hidden; /*this line is used to hide the overflowing content*/
   object-fit: contain; /*this line is used to make the image fit the container*/
   margin-bottom: 10px;
+  border-radius: 20px;
 }
 
 .experience-thumb {
@@ -121,9 +122,77 @@ height: 100%;
 object-fit: contain; /*this line is used to make the image fit the container*/
 }
 
+#projects-container .experience-image {
+  width: 174px;
+  height: 174px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#projects-container .experience-thumb {
+  object-fit: cover;
+}
+
+#projects-container .experience-brand {
+  text-align: center;
+}
+
+#projects-section-inner {
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+#projects-container {
+  max-width: none;
+  justify-content: center;
+  overflow-x: clip;
+  overflow-y: visible;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+}
+
+#projects-container .experience-image {
+  width: 174px;
+  height: 174px;
+}
+
+#experience-container .experience-image {
+  width: 174px;
+  height: 174px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#experience-container .experience-thumb {
+  object-fit: cover;
+}
+
+#experience-container .experience-brand {
+  text-align: center;
+}
+
+#experience-section-inner {
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+#experience-container {
+  max-width: none;
+  justify-content: center;
+  overflow-x: clip;
+  overflow-y: visible;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+}
+
+
+
 .umd-logo {
   padding: 15px; /* Add white padding around UMD logo */
   box-sizing: border-box; /* Include padding in width/height calculation */
+  border-radius: 35px;
 }
 
 .experience-info{
@@ -167,7 +236,7 @@ object-fit: contain; /*this line is used to make the image fit the container*/
 
   border: none;
   width: 90%;
-  border-radius: 10px;
+  border-radius: 20px;
   height: 40px;
   background: #1c1c1c;
   color: #F5F5F7;
